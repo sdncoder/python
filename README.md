@@ -1,2 +1,2 @@
 # networkx
-![Alt text](/networkx/trace.png?raw=true "trace")
+![Alt text]sdncoder/networkx/trace.png?raw=true "trace")
