@@ -1,2 +1,2 @@
 # networkx
-![Alt text](/relative/path/to/trace.png?raw=true "trace")
+![Alt text](/networkx/trace.png?raw=true "trace")
