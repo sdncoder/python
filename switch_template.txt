@@ -1,0 +1,40 @@
+hostname $hostname
+
+interface Loopback1
+ description GENERAL VRF
+ ip address $loopback1 255.255.255.255
+!
+interface Loopback2
+ description <x>
+ ip vrf forwarding VRFx
+ ip address $loopback2 255.255.255.255
+!
+interface Loopback3
+ description <x>
+ ip vrf forwarding VRFy
+ ip address $loopback3 255.255.255.255
+!
+interface Loopback4
+ description <x>
+ ip vrf forwarding VRFz
+ ip address $loopback4 255.255.255.255
+!
+interface Loopback5
+ description <x>
+ ip vrf forwarding VRFx2
+ ip address $loopback5 255.255.255.255
+!
+interface Loopback6
+ description <x>
+ ip vrf forwarding VRFy2
+ ip address $loopback6 255.255.255.255
+!
+!
+interface Vlan10
+ description <x>
+ ip address $vlan10
+ ip helper-address 10.232.8.5
+ no ip redirects
+ no ip unreachables
+ no ip proxy-arp
+ ip verify unicast reverse-path
