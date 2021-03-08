@@ -1,14 +1,13 @@
-#import sw_vars variable file  as Python module
+#import sw_vars variable file as a Python module
 import sw_vars
 
 # readin the switch template text file
 from string import Template
-filein = open( 'switch_template.txt' )
+filein = open( 'switch_template.txt' )  # test file with switch configuration file
 src = Template( filein.read())
 
 
-# ordered list of varialbes to be substituted into template $ variables from sw_vars
-#
+# ordered list of varialbes to be substituted into template variables from sw_vars
 d={ 'hostname':sw_vars.hostname,
 'loopback1':sw_vars.loopback1,
 'loopback2':sw_vars.loopback2,
@@ -19,6 +18,6 @@ d={ 'hostname':sw_vars.hostname,
 'vlan10':sw_vars.vlan10
 }
 
-# output file
+# output
 result = src.substitute(d)
 print result
