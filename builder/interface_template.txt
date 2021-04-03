@@ -1,0 +1,14 @@
+interface Loopback6
+ description <x>
+ ip vrf forwarding VRFy2
+ ip address $loopback6 255.255.255.255
+!
+!
+interface Vlan10
+ description <x>
+ ip address $vlan10
+ ip helper-address 10.232.8.5
+ no ip redirects
+ no ip unreachables
+ no ip proxy-arp
+ ip verify unicast reverse-path
